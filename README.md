@@ -11,8 +11,15 @@
 ### Download the repository from github into your account
 
 ```
-git clone --depth 1 https://github.com/ianeblack/repeet ~/.config/nvim
-nvim
+git clone git@github.com:ianeblack/repeet.git
+```
+
+```
+cd repeet
+```
+
+```
+sudo cp repeet ~/../../usr/local/bin/
 ```
 
 # USAGE
