@@ -11,7 +11,7 @@
 ### Download the repository from github into your account
 
 ```
-git clone git@github.com:ianeblack/repeet.git
+git clone https://github.com/ianeblack/repeet.git
 ```
 
 ```
@@ -19,7 +19,7 @@ cd repeet
 ```
 
 ```
-sudo cp repeet ~/../../usr/local/bin/
+sudo cp repeet ~/../../usr/local/bin/repeet
 ```
 
 # USAGE
