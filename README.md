@@ -18,7 +18,10 @@ git clone https://github.com/ianeblack/repeet.git
 cd repeet
 ```
 
+```
 chmod +x repeet
+
+```
 
 ```
 sudo cp repeet ~/../../usr/local/bin/repeet
