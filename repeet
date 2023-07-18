@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import time
+
+
+
+def repeet(string, repeat):
+    os.system('clear')
+    print(f"You will now practice {string} for {repeat} times.")
+
+    x = 0
+    while x < repeat:
+        checkr = input(">>")
+        if checkr != string:
+            os.system('clear')
+            print('Incorrect, try again.')
+            continue
+        else:
+            os.system('clear')
+        x += 1
+    
+def main():
+    parser = argparse.ArgumentParser(description='Fetch a Bible verse based on version and topic.')
+
+    parser.add_argument('-s', '--string', type=str, required=True,
+                        help='input the string you want to practice')
+    parser.add_argument('-r', '--repeat', type=int, required=True,
+                        
+                        help='input the ammount of times you want to practice')
+   
+
+    # Parse the command-line arguments
+    args = parser.parse_args()
+
+    # Call the fetch_verse function with the provided arguments
+    repeet(args.string, args.repeat)
+
+if __name__ == '__main__':
+    main()
+
