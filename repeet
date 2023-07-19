@@ -11,15 +11,23 @@ def repeet(string, repeat):
     print(f"You will now practice {string} for {repeat} times.")
 
     x = 0
+    y = 0
     while x < repeat:
+        os.system('clear')
+        print(x)
         checkr = input(">>")
         if checkr != string:
+            y += 1
             os.system('clear')
             print('Incorrect, try again.')
             continue
         else:
             os.system('clear')
         x += 1
+    else:
+        os.system('clear')
+        average = (x - y) / x * 100
+        print(f'{x} ammount of reps done in total with a {average}% accuracy')
     
 def main():
     parser = argparse.ArgumentParser(description='Fetch a Bible verse based on version and topic.')
